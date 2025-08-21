@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/filters.css">
+</head>
+<body>
+    <main class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <h1 style="margin-bottom: 0;">Task Manager</h1>
+            <button id="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode" type="button" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #2563eb; padding: 0.2rem 0.5rem; border-radius: 0.5rem; transition: background 0.2s;">
+                <span id="dark-mode-icon" aria-hidden="true">🌙</span>
+            </button>
+        </div>
+        <nav class="filters" aria-label="Task filters">
+            <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-btn" data-filter="pending" aria-pressed="false">Pending</button>
+            <button type="button" class="filter-btn" data-filter="completed" aria-pressed="false">Completed</button>
+        </nav>
+        <form id="task-form" aria-label="Add a new task">
+            <label for="task-input" class="visually-hidden">Task</label>
+            <input type="text" id="task-input" name="task" placeholder="Add a new task" required aria-required="true" autocomplete="off">
+            <button type="submit" aria-label="Add task">Add</button>
+        </form>
+        <ul id="task-list" aria-live="polite"></ul>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
