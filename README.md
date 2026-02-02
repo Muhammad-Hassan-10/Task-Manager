@@ -17,6 +17,8 @@ A modern, accessible, and responsive web application for managing your daily tas
 
 1. **Clone or Download** this repository to your local machine.
 2. **Open `index.html`** in your web browser.
+You can also visit:
+   https://atask-manager.netlify.app/
 
 No build tools or server required—everything runs in your browser!
 
